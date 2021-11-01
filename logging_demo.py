@@ -24,12 +24,13 @@ def logging_test(logger):
     # error
     # critical or fatal
     level = logging.WARN + 5  # custom log level
-    logger.debug('debug')
-    logger.info('Info')
-    logger.warning('warning')
+
+    logger.debug('Event was added in SKDUE')
+    logger.info('Login success')
+    logger.warning('Fail attempt to login')
     logger.log(level,'level')
-    logger.error('error')
-    logger.critical('critical')
+    logger.error('Missing calendar')
+    logger.critical('Database is down!')
 
 
 
